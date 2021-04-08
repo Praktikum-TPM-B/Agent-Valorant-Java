@@ -33,6 +33,8 @@ public class DetailActivity extends AppCompatActivity {
         String role    = extras.getString("ROLE_KEY");
         String summary = extras.getString("SUMMARY_KEY");
 
+        setTitle("Detail "+ name);
+
         img.setImageURI(Uri.parse(images));
         Glide.with(this)
             .load(images)
